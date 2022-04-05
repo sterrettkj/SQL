@@ -1,0 +1,12 @@
+/** Book List: 
+Ahsoka (1)
+Black Sun (1)
+Don't Let The Pigeon Drive The Bus (1)
+**/
+
+CREATE TABLE Books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER );
+
+INSERT INTO books VALUES (1, "Ahsoka", 1);
+INSERT INTO books VALUES (2, "Black Sun", 2);
+INSERT INTO books VALUES (3, "Don't Let The Pigeon Drive The Bus", 3);
+SELECT * FROM books
