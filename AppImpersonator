@@ -1,0 +1,11 @@
+CREATE TABLE pinball (id INTEGER PRIMARY KEY AUTOINCREMENT, player TEXT, date TEXT, score INTEGER);
+INSERT INTO pinball(player, date, score) VALUES ("IVY", "2019-01-03", 5000);
+INSERT INTO pinball(player, date, score) VALUES ("SAM", "2018-02-03", 10000);
+INSERT INTO pinball(player, date, score) VALUES ("RIS", "2020-04-20", 5000000);
+
+UPDATE pinball SET date = "2020-04-27" WHERE id = 3;
+
+SELECT * FROM pinball;
+
+DELETE FROM pinball WHERE id = 2;
+SELECT * FROM pinball;
