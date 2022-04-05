@@ -1,0 +1,20 @@
+CREATE TABLE store (id INTEGER, item TEXT, price INTEGER, aisle INTEGER, quantity INTEGER, color TEXT);
+
+INSERT INTO store VALUES (1,"tshirt", 300, 2, 14, "red");
+INSERT INTO store VALUES (2, "flip flops", 10, 3, 30, "blue");
+INSERT INTO store VALUES (3, "wheelies", 15, 3, 45, "purple");
+INSERT INTO store VALUES (4, "kittie shoes", 5, 3, 17, "silver");
+INSERT INTO store VALUES (5, "purse", 13, 5, 150, "green");
+INSERT INTO store VALUES (6, "knifies", 1, 1, 40, "brown");
+INSERT INTO store VALUES (7, "polo shirts", 10, 7, 40, "pink");
+INSERT INTO store VALUES (8, "jeggings", 30, 7, 40, "black");
+INSERT INTO store VALUES (9, "booties", 160, 9, 50, "brown");
+INSERT INTO store VALUES (10, "snow boots", 100, 9, 50, "brown");
+INSERT INTO store VALUES (11, "sandals", 55, 9, 50, "blue");
+INSERT INTO store VALUES (12, "biker sneakers", 40, 9, 50, "beige");
+INSERT INTO store VALUES (13, "scooby snacks", 600, 11, 50, "gold");
+INSERT INTO store VALUES (14, "carnival plushies", 30, 11, 50, "white");
+INSERT INTO store VALUES (15, "whale stuffie", 30, 11, 50, "white");
+
+SELECT * from store ORDER BY price;
+SELECT aisle, SUM(quantity) from store GROUP BY aisle
